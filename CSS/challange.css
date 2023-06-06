@@ -1,0 +1,157 @@
+:root {
+    background-color: #f3eae3;
+    font-family: Montserrat;
+}
+
+
+.content .container {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-gap: 15px;
+    background-color: white;
+    width: fit-content;
+    padding-right: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* media for container */
+@media (max-width:667px) {
+    .content .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+        padding-right: 0;
+        overflow: hidden;
+    }
+
+}
+
+/*   mobile size */
+
+.container img {
+    width: 250px;
+    height: 350px;
+    border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -ms-border-radius: 5px 0px 0px 5px;
+    -o-border-radius: 5px 0px 0px 5px;
+}
+
+
+@media (max-width:667px) {
+    .container img {
+        width: 100%;
+        margin-top: -65px;
+    }
+}
+
+
+/* media for img  */
+
+
+.container .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.container .text p:nth-child(1) {
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+
+}
+
+
+.container .text h1:nth-child(2) {
+    margin: 0;
+    line-height: 1;
+    font-size: 27px;
+}
+
+.container .text p:nth-child(3) {
+    line-height: 1.4;
+    color: #b6b4b7;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+
+
+.span-one {
+    color: hsl(158, 36%, 37%);
+    font-weight: 600;
+    margin: auto;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+del {
+    color: #b6b4b7;
+    font-size: 10px;
+    padding-left: 20px;
+}
+
+.span-f {
+    font-family: Fraunces;
+}
+
+
+.button {
+    position: relative;
+    margin: auto;
+}
+
+
+@media (max-width:667px) {
+    .button {
+        margin: 20px auto 20px;
+    }
+}
+
+
+input {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    border: 3px solid hsl(158, 36%, 37%);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+}
+
+
+@media (max-width:667px) {
+    input {
+        margin: 30px auto;
+    }
+}
+
+.button i {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 16px;
+    color: white;
+}
